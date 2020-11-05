@@ -545,7 +545,7 @@
 // }
 
 // **************************************************************************************
-// 1. given a string ,retrun Character that appears the most 
+// 1. given a string ,retrun Character that appears the most
 
 // 2. given a string of words , count number of vowels
 
@@ -569,56 +569,139 @@
 // })
 // console.log(dup)
 
-
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-            //  ARRAYS
+//  ARRAYS
 
-   const array =[1,2,3,4,5]        
+//    const array =[1,2,3,4,5]
 // a firstvalue
-    //  let result1 = array[0]
-    //  let result2= array.splice(1)
-    //  console.log(result)
+//  let result1 = array[0]
+//  let result2= array.splice(1)
+//  console.log(result)
 
-    // b lastvalue
-    // const lastvalue = (arr)=>{
-    //     // let length = arr.length - 1 
-    //     // return arr[length]
-    //    let res= arr.reduce((acc,int,index)=>{
-    //         return  index
-    //     })
-    //     console.log(res)
-    // }
-    // console.log(lastvalue([1,2,3,4,5] )) 
+// b lastvalue
+// const lastvalue = (arr)=>{
+//     // let length = arr.length - 1
+//     // return arr[length]
+//    let res= arr.reduce((acc,int,index)=>{
+//         return  index
+//     })
+//     console.log(res)
+// }
+// console.log(lastvalue([1,2,3,4,5] ))
 
- // c sum
-    //   const sum = (arr)=>{
-        //   let count= 0
-        //   for( let i of arr){
-        //    count= count + i
-        //   }
-        //   console.log(count)
+// c sum
+//   const sum = (arr)=>{
+//   let count= 0
+//   for( let i of arr){
+//    count= count + i
+//   }
+//   console.log(count)
 
-    //  using reduce
-        //  let add= arr.reduce((a,b,c)=>{
-        //      return c
-        //  })
-        //  console.log(add)
-    //   }
-    //  sum(array)
+//  using reduce
+//  let add= arr.reduce((a,b,c)=>{
+//      return c
+//  })
+//  console.log(add)
+//   }
+//  sum(array)
 
-    // d indexvalue
-    // const index= (arr)=>{
-    
-    //       for( let i in arr){
-    //        console.log(i) 
-    //       }
+// d indexvalue
+// const index= (arr)=>{
 
-    //       let res = arr.map((v,i)=>i)
-    //           console.log(res)
-    //   }
-    // index(array)
+//       for( let i in arr){
+//        console.log(i)
+//       }
 
-    // c chuckstargetlength
-       
+//       let res = arr.map((v,i)=>i)
+//           console.log(res)
+//   }
+// index(array)
 
-//   2 const arry = []  
+// c chuckstargetlength
+
+//   2 const arry = []
+
+// sep 7th 2020 fizz buzz alogorithm//
+
+// const fizzBuzz = (num)=>{
+//     for(let i=0; i<= num;i++){
+//       if(i%15===0) console.log("fizzBuzz")
+//       else if (i%3===0) console.log("buzz")
+//       else if (i%5===0)console.log("buzz")
+//       else console.log(i)
+//     }
+// }
+
+// fizzBuzz(20)
+
+// var str = "How are you doing today ?";
+// var res = str.split("");
+// console.log(res.slice(0,3).join().toString())
+
+// const months = ["Jan", "March", "April", "June"];
+// console.log(months.splice(1, 0, "Feb"))
+
+// harmless ransom note //
+
+//  combination algorithm//
+// const permutation = (array) => {
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+//       console.log(array[i] + array[j]);
+//     }
+//   }
+// };
+
+// permutation(["a", "b", "c","e","w","u"]);
+
+// let color = "#" + Math.floor(Math.random() * 16777215).toString(16)
+
+// const eas = [1,2, 3,6]
+// for(val of eas){
+//     console.log(val)
+// }
+
+// removing duplicate word from a string
+
+// const word = "dennis";
+// let arr = word.split("");
+// for (let i = 0; i <= arr.length; i++) {
+//   for (let w = i + 1; w <= arr.length; w++) {
+//     if (arr[w] == arr[i]) {
+//       arr.splice(w,1).join();
+//     }
+//     console.log(arr);
+//   }
+// }
+
+// const nap =[1,1,1,2,3]
+// const see = new Set(nap)
+// console.log(see)
+
+// find th longesrt word in string
+
+//  function longestWord(words){
+//   const longestWordd = words.split(" ").map((word) => word.length)
+//    return Math.max(...longestWordd)
+//  }
+//   function longestWord(words) {
+//     const longestWordd = words.split(" ").sort((a,b) => (b.length-a.length));
+//     return longestWordd[0].length;
+//   }
+
+//   function findLongestWord(str) {
+//     const longestWord = str.split(" ").sort(function (a, b) {
+//       return b.length - a.length;
+//     });
+//     return longestWord[0].length;
+//   }
+//  console.log(longestWord("come to school"));
+
+// remove duplicate from an array
+// function duplicate(dup){
+//  let duplicate =dup.filter((c,index)=>{
+// return dup.indexOf(c)===index
+// })
+// console.log(duplicate)
+// }
+// duplicate(["react","java","react","native"])
