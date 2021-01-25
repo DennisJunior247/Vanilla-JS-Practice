@@ -32,7 +32,9 @@
 
 // let User = new Hero("dennis");
 // console.log(User.mad());
-
+// let x = {};
+// console.log(Object.getPrototypeOf(x));
+// // console.log(x.__proto__);
 // class Den {
 //   constructor(name) {
 //     this.name = name;
@@ -41,9 +43,22 @@
 //       return `Hi ${this.name}`;
 //   }
 // }
-// let DD= new Den("friend")
-// console.log(DD.sayHi())
 
-let x = {};
-console.log(Object.getPrototypeOf(x))
-console.log(x.__proto__)
+// class Me extends Den {
+//   constructor(skill, name) {
+//     super(name);
+//     this.skill = skill;
+//   }
+//   getSkill() {
+//     return `${this.skill}${this.name}  hahaha`;
+//   }
+// }
+
+// let jc = new Me("friend","dennis");
+// console.log(jc.Skill());
+
+
+num = [1,2,3,5,6]
+ let array =num.slice(0,3)
+console.log(array)
+console.log(num);
