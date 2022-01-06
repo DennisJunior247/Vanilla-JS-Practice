@@ -28,36 +28,7 @@
 // };
 // removeV("aeiouqwerty");
 
-// METHOD 3/REGEX
-// let removeVowels = text => {
-//   return text.replace(/[aeiou]+/gi, "");
-//  text.replace(/[^aeiou]+/gi, "")
-// };
-// console.log(removeVowels("abioutuedfgnvhdkj"));
-// console.log("safsytawyaywua".split(/[aeiou]/).join(""));
 // ------------------------------------------------------------------------------------------------------------
-
-//Diff. btw native function and Arrow=> function Using the 'this' keyword
-// const obj = {
-//     name: 'Bka',
-//     age: 19,
-//     getDetails (){
-//         //  let that = this;
-//         setTimeout(()=>{
-//            console.log(`i am ${this.name} and i'm ${this.age}`)
-//         }, 1000)
-//     }
-// };
-// console.log(obj.getDetails())
-
-//WRTIE A PROGRAM THAT DOUBLES THE NUMBERS IN AN ARRAY
-// let doubledNum = (numbers) => {
-//   doubled = numbers.map(number => {
-//   return number * 2;
-// });
-// return doubled;
-// }
-// console.log(doubledNum([1,2,3,4,5]))
 
 //WRITE A FUNCTION THAT SHOWS ONLY THE NUMBER GREATER THAN ANY NUMBER SET IN AN ARRAY
 // function numGreaterThan3(numbers, condition){
@@ -70,7 +41,6 @@
 
 // let FindIndex = numbers.findIndex(v => v === 4);
 // let Find = numbers.find(v => v === "");
-// console.log(double)
 // console.log(filtered)
 // console.log(Find);
 
@@ -84,40 +54,12 @@
 // console.log(numbers.sort((a,b)=>{
 //     return a-b
 // })
-// METHOD 1// MET// METHOD 1
-// removeV = str => {
-//   let vowels = ["a", "e", "i", "o", "u"];
-//   let hi = str.split("").filter(items => !vowels.includes(items));
-//   console.log(hi.join());
-// };
-// removeV("aeiouqwerty");HOD 1
-// removeV = str => {
-//   let vowels = ["a", "e", "i", "o", "u"];
-//   let hi = str.split("").filter(items => !vowels.includes(items));
-//   console.log(hi.join());
-// };
-// removeV("aeiouqwerty");
-// removeV = str => {
-//   let vowels = ["a", "e", "i", "o", "u"];
-//   let hi = str.split("").filter(items => !vowels.includes(items));
-//   console.log(hi.join());
-// };
-// removeV("aeiouqwerty");
-// rest
-//reduce methods helps to add up numbers
-// numbers.reduce// METHOD 1
-// removeV = str => {
-//   let vowels = ["a", "e", "i", "o", "u"];
-//   let hi = str.split("").filter(items => !vowels.includes(items));
-//   console.log(hi.join());
-// };
-// removeV("aeiouqwerty");((acc))
 
 //USING REST AND SPREAD WITH ARRAYS AND OBJECT
 // let a = "abcde123fghlm";
 // let b = [...a];
-// c = a.split([""]);
-// console.log(b)
+// c = a.split("");
+// // console.log(b)
 // console.log(c);
 
 // let oldObj1 ={
@@ -131,35 +73,19 @@
 // let newObj = { ...oldObj1, ...oldObj2};
 // console.log(newObj)
 
-// -----------------CLASS CONTRUCTOR AND INHERITANCE-------------------------------------------------------------------
-// class Person {
-//   constructor(name, age) {
-//     this.name = name;
-//     this.age = age
-//   }
-//   hello() {
-//     return `Hello i am ${this.name} and i'm ${this.age}yrs Old`
-//   }
-// }
-
-// const Kay = new Person('John',23)
-// const Kayo = new Person('Kayode',26)
-// console.log(Kay.hello(), Kayo.hello())
-// console.log(Kay,Kayo);
-// ------------------------------------------------------------------------------------------------
-
 //CREATE A FUNCTION THAT ACCEPTS AN ARRAY AND RETURN THE LAST ITEM IN THE ARRAY
 // using reverse/find method
 // lastItem = arra => arra.reverse().find(v => v);
+
 // //using for in loop
 // lastItem2 = arra =>{
-//   for(let v in arra){
+//   for(let v in  arra){
 //    ae = arra[v]
 // }
 // console.log(ae)//consoleloging this outside the for loop is the logic for getting the last item. if inside it get the whole items
 // }
 // console.log(
-// lastItem2(["john", 2, 3, 4, 5, 6, 7, 8, { name: "john" }, { age: 12 }])
+// lastItem2(["john", 2, 3, 4, 5, 6, 7, 8, { name: "john" }, 1])
 // );
 
 // write A FUNCTION THAT COUNT THE NUMBER OF VOWELS IN THE INPUT
@@ -170,9 +96,9 @@
 //     .filter(items => !vowels.includes(items))
 //     .join("");
 //   let n = str.length - hi.length;
-//   // console.log(`${n} vowels removed`);
+//   console.log(`${n} vowels `);
 // };
-// removeV("aeiouqwertyggaggegggilou");
+// removeV("dennis");
 
 // let myArr = () => {
 //   let arr = [4, 2, 5, 3];
@@ -195,7 +121,7 @@
 
 // let dArray = ["john", 2, 3, 4, 5, 6, 7, 8, { name: "john" }, { age: 12 }];
 // let ne = dArray.length -5.
-// let d = dArray.splice(ne)
+// let d = dArray.splice(7,0)
 // console.log(d)
 
 // ---------------------------------------------------------------------------
@@ -212,10 +138,10 @@
 //   multiplier = 1;
 //   for (i = num; i >= 1; i--) {
 //     multiplier *= i;
-//     // console.log(multiplier);
+//     console.log(multiplier);
 //   }
 // };
-// getFactirial(4);
+// getFactirial(16);
 
 // let ar = [0, 1, 2, 3, 4, 5, 7, { name: "john" }];
 // for (let v in ar) {
@@ -333,7 +259,7 @@
 //     }
 // }
 
-//WRITE A FUNCTION THAT REVERSE A WORD
+// WRITE A FUNCTION THAT REVERSE A WORD
 // reverseWord = (word) => {
 // for (i = word.length - 1; i >= 0; i--) {
 //   console.log(word[i]);
@@ -439,7 +365,7 @@
 
 // USING FOR EACH
 // users.forEach( user =>{
-//     console.log(users);
+//     console.log(user);
 // })
 
 // USING FILTER (getting some data from the original data base on some condition)
@@ -633,13 +559,6 @@
 // }
 
 // fizzBuzz(20)
-
-// var str = "How are you doing today ?";
-// var res = str.split("");
-// console.log(res.slice(0,3).join().toString())
-
-// const months = ["Jan", "March", "April", "June"];
-// console.log(months.splice(1, 0, "Feb"))
 
 // harmless ransom note //
 
