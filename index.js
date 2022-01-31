@@ -725,3 +725,43 @@
 //   console.log("end: " + i);
 // }
 // foo(3);
+
+// function char(str) {
+//   const charObj = {};
+//   let max = 0;
+//   let charStr = "";
+//   for (let char of str) {
+//     if (charObj[char]) {
+//       charObj[char]++;
+//     } else {
+//       charObj[char] = 1;
+//     }
+//   }
+//   console.log(charObj);
+//   for (const val in charObj) {
+//     if (charObj[val] > max) {
+//       max = charObj[val];
+//       console.log(max, "max");
+//       charStr = val;
+//       console.log(val, "val");
+//     }
+//   }
+
+//   console.log(charStr);
+// }
+
+// char("dennis");
+
+// function chunked(arry, size) {
+//   let index = 0;
+//   const chunk = [];
+//   while (index <= arry.length) {
+//     const slicee = arry.slice(index, index + size);
+//     chunk.push(slicee);
+//     index += size;
+//   }
+
+//   console.log(chunk);
+// }
+
+// chunked([1, 2, 3, 4], 2);
