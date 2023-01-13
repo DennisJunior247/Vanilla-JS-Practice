@@ -1,8 +1,8 @@
-function NegToStart(arr) {
+function quickSort(arr) {
   let j = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < 0) {
+    if (arr[i] < arr[j]) {
       let temp;
       temp = arr[i];
       arr[i] = arr[j];
@@ -10,8 +10,7 @@ function NegToStart(arr) {
       j++;
     }
   }
-
   return arr;
 }
 
-console.log(NegToStart([-12, 11, -13, 5]));
+console.log(quickSort([3, 4, 1, 5]));
